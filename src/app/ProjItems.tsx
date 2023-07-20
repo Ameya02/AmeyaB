@@ -4,7 +4,7 @@ import FileUpload from "./assets/projects/Filehosting.png";
 
 import React from "react";
 
-const ProjItems = ({ img, name, stack, link }) => {
+const ProjItems = ({ img, name, stack, link }: any) => {
   return (
     <Flex
       position="relative"
