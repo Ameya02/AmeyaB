@@ -1,6 +1,5 @@
 import { Image } from "@chakra-ui/next-js";
 import { Box, Flex, Link, Text } from "@chakra-ui/react";
-import FileUpload from "./assets/projects/Filehosting.png";
 
 import React from "react";
 
