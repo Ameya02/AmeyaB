@@ -27,7 +27,7 @@ const ProjItems = ({ img, name, stack, link }: any) => {
         position="absolute"
         top={"50%"}
         left={"50%"}
-        className=" group-hover:block translate-x-[-50%] translate-y-[-50%]"
+        className=" group-hover:bg-transparent  group-hover:block translate-x-[-50%] translate-y-[-50%]"
       >
         <Text
           fontSize="2xl"
