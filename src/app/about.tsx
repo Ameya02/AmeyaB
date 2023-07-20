@@ -20,7 +20,7 @@ const About = () => {
         display={{ base: "grid", md: "flex" }}
         gap={8}
       >
-        <Box className=" col-span-3">
+        <Box className=" col-span-3 mr-12">
           <Text
             fontSize="4xl"
             fontWeight="semibold"
@@ -33,8 +33,11 @@ const About = () => {
           <Text py={4} fontSize="5xl" fontWeight="extrabold" color={"white"}>
             Who Am I
           </Text>
-          <Text py="2">
-            lsnldnsnsnldnsndslnldnksdnksndkndslnsdknskdnsdnksdnkdsnkn
+          <Text py="2" className="text-lg boder-box text-justify">
+            Ameya Bavkar is a final year student of Computer Engineering at ACE
+            Mumbai. His Interest are Web Development,Software Developement, He
+            loves to contribute in open source projects and learn new things in
+            Web, AI, Automation and LLM
           </Text>
         </Box>
         <Box
@@ -50,6 +53,7 @@ const About = () => {
           className=" ease-in shadow-xl shadow-slate-300 hover:scale-105 "
         >
           <Image
+            className=""
             src={
               "https://fossbytes.com/wp-content/uploads/2023/01/best-laptops-programming.jpg"
             }

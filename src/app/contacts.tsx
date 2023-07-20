@@ -21,7 +21,7 @@ const Contacts = () => {
     <Box id="contacts" className="w-full lg:h-screen">
       <Box className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <Text
-          fontSize="2xl"
+          fontSize="4xl"
           className="tracking-widest"
           fontWeight="extrabold"
           textColor="cyan"
@@ -29,7 +29,9 @@ const Contacts = () => {
         >
           Contacts
         </Text>
-        <Text>Get In Touch</Text>
+        <Text fontSize="5xl" fontWeight="extrabold" py={4} textColor="white">
+          Get In Touch
+        </Text>
         <Box className="grid lg:grid-cols-5 gap-8">
           <Box
             className="col-span-3 lg:col-span-2 shadow-xl shadow-gray-400 rounded-xl"
