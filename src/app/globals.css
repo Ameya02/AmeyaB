@@ -10,14 +10,14 @@
   scroll-behavior: smooth !important;
  }
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: #1A202C;
   --background-start-rgb: #FAF9F6;
   --background-end-rgb: #FAF9F6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: #FAF9F6;
     --background-start-rgb: #1A202C;
     --background-end-rgb: #1A202C;
   }
