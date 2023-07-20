@@ -1,6 +1,7 @@
 import { Box, Flex, Text, Link } from "@chakra-ui/react";
 import React from "react";
-import ProjComp from "./ProjComp";
+import ProjItems from "./ProjItems";
+import { projects_data } from "./assets/constants";
 
 const Projects = () => {
   return (
@@ -18,8 +19,15 @@ const Projects = () => {
           What I &apos; ve Built
         </Text>
         <Box className="grid md:grid-cols-2 gap-8">
-          <ProjComp />
-          <ProjComp />
+          {projects_data.map((p_d) => (
+            <ProjItems
+              key={p_d.project_name}
+              img={p_d.project_img}
+              name={p_d.project_name}
+              stack={p_d.project_stack}
+              link={p_d.project_link}
+            />
+          ))}
         </Box>
       </Box>
     </Flex>

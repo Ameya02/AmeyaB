@@ -4,7 +4,7 @@ import FileUpload from "./assets/projects/Filehosting.png";
 
 import React from "react";
 
-const ProjComp = () => {
+const ProjItems = ({ img, name, stack, link }) => {
   return (
     <Flex
       position="relative"
@@ -16,7 +16,7 @@ const ProjComp = () => {
       className=" rounded-xl shadow-cyan-600 p-4 group hover:bg-gradient-to-r from-cyan-500 to-cyan-700 "
     >
       <Image
-        src={FileUpload}
+        src={img}
         w="700px"
         h="500px"
         rounded={"xl"}
@@ -36,12 +36,12 @@ const ProjComp = () => {
           textAlign="center"
           className="tracking-wider"
         >
-          React File Upload
+          {name}
         </Text>
         <Text pb={"4"} pt={2} color={"white"} textAlign={"center"}>
-          ReactJS
+          {stack}
         </Text>
-        <Link href="/projects/reactfileupload">
+        <Link href={link}>
           <Text
             textAlign={"center"}
             py={3}
@@ -59,4 +59,4 @@ const ProjComp = () => {
   );
 };
 
-export default ProjComp;
+export default ProjItems;

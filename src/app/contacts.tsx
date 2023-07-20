@@ -6,7 +6,6 @@ import {
   Image,
   FormControl,
   FormLabel,
-  FormHelperText,
   Input,
   Textarea,
   Link,
