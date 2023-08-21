@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <Flex id="skills" w="full" h={{ lg: "100vh" }}>
       <Flex flexDirection="column" className="justify-center h-full">
-        <Box className="ml-32    ">
+        <Box className="ml-32">
           <Text
             fontSize="4xl"
             fontWeight="semibold"

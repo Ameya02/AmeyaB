@@ -21,15 +21,15 @@ const Contacts = () => {
     <Box id="contacts" className="w-full lg:h-screen">
       <Box className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <Text
-          fontSize="2xl"
-          className="tracking-widest"
-          fontWeight="extrabold"
-          textColor="cyan"
+          fontSize="4xl"
+          fontWeight="semibold"
+          color={"cyan"}
           textTransform="uppercase"
+          className="tracking-widest"
         >
           Contacts
         </Text>
-        <Text>Get In Touch</Text>
+        <Text py={4} fontSize="5xl" fontWeight="extrabold" color={"white"}>Get In Touch</Text>
         <Box className="grid lg:grid-cols-5 gap-8">
           <Box
             className="col-span-3 lg:col-span-2 shadow-xl shadow-gray-400 rounded-xl"
@@ -48,11 +48,11 @@ const Contacts = () => {
                 />
               </Box>
               <Box>
-                <Text py={2}>Name Here</Text>
-                <Text>Developer</Text>
+                <Text py={2}>Ameya Bavkar</Text>
+                <Text>Full Stack Developer</Text>
                 <Text className="py-4">
                   I am available for internship and full time position Contact
-                  Me and let &apos; s talk
+                  Me and let&apos;s talk
                 </Text>
               </Box>
               <Box>
