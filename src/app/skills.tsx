@@ -5,28 +5,27 @@ import { Image } from "@chakra-ui/next-js";
 import { Card, CardBody } from "@chakra-ui/react";
 import React from "react";
 import { skills } from "./assets/constants";
+import Marquee from "react-fast-marquee";
 
 const Skills = () => {
   return (
-    <Flex id="skills" w="full" h={{ lg: "100vh" }} p={2}>
-      <Flex
-        maxW={"1240px"}
-        flexDirection="column"
-        className="mx-auto justify-center h-full"
-      >
-        <Text
-          fontSize="4xl"
-          fontWeight="semibold"
-          color={"cyan"}
-          textTransform="uppercase"
-          className="tracking-widest"
-        >
-          Skills
-        </Text>
-        <Text fontSize="5xl" fontWeight="extrabold" textColor="white">
-          What I Can do
-        </Text>
-        <Box className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+    <Flex id="skills" w="full" h={{ lg: "100vh" }}>
+      <Flex flexDirection="column" className="justify-center h-full">
+        <Box className="ml-32">
+          <Text
+            fontSize="4xl"
+            fontWeight="semibold"
+            color={"cyan"}
+            textTransform="uppercase"
+            className="tracking-widest"
+          >
+            Skills
+          </Text>
+          <Text fontSize="5xl" fontWeight="extrabold" textColor="white">
+            What I Can do
+          </Text>
+        </Box>
+        <Marquee className="w-full overflow-hidden " pauseOnHover speed={120}>
           {skills.map((sk) => (
             <Box
               key={sk.name}
@@ -41,7 +40,7 @@ const Skills = () => {
               </Tooltip>
             </Box>
           ))}
-        </Box>
+        </Marquee>
       </Flex>
     </Flex>
   );
